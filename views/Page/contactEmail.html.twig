@@ -1,0 +1,11 @@
+{% extends 'layout.twig' %}
+
+{% block title %}Email{% endblock%}
+{% block body %}
+A contact enquiry was made by {{name}} at {{"now"|date("Y-m-d H:i:s")}}.
+
+Reply-To email: {{email}}
+Subject: {{subject}}
+Body:
+{{body}}
+{% endblock %}
